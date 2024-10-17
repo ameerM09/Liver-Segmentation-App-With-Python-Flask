@@ -23,3 +23,4 @@ Liver-Segmentation-App-With-Python-Flask/
     |──routes.py
     |──test_model.py
      
+/data/liver
