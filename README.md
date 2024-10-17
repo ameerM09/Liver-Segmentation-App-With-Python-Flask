@@ -1,7 +1,6 @@
 ### Below is what the final directory structure should look like:
 
 ```
-
 Liver-Segmentation-App-With-Python-Flask/
     |──data/
        |──dl_models/
