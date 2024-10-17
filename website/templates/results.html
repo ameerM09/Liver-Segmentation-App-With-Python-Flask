@@ -1,0 +1,63 @@
+{% extends "base.html" %}{% block title %}Results{% endblock %}
+
+{% block page_content %}
+
+    <h2>
+        <center>
+            <strong>
+                Results
+            </strong>
+        </center>
+    </h2>
+
+    <div class="card">
+        <div class="card-header">
+        </div>
+        <div class="card-body">
+
+            <form class = "mb-3" action="/" method = "POST">
+                <div class = "form-floating mb-3">
+                    <input
+                    type = "patient_name"
+                    class = "form-control"
+                    name = "patient_name"
+                    id = "patient_name"
+                    placeholder = "Enter patient full name" required/>
+                </div>
+
+                <!-- <select class="form-select mb-3" id="inputGroupSelect02">
+                    <option selected>Type of Cancer</option>
+                    <option value="">Liver</option>
+                    <option value="">Pancreatic</option>
+                    <option value="">Stomach</option>
+                </select> -->
+    
+                <div class = "d-grip gap-2" align = "center">
+                    <button type = "submit" class = "btn text-light" style = "background-color: #9900ff;">Save Patient Data</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <br>
+
+    <form id="upload-file" method="post" enctype="multipart/form-data" action="/uploader">
+        <input type="file" name="file" class="btn text-light" style="background-color: #9900ff;" id="imageUpload" accept=".nii, .nii.gz">
+        <!-- <div class="image-section" style="display:none;">
+            <img id="imagePreview"  class="img-responsive" src="#" style="width:300px;height:300px;"/><br><br>
+            <div>
+                <button type="button" class="btn btn-info btn-lg " id="btn-predict">Predict</button>
+            </div>
+        </div> -->
+        <input type="submit" value="Upload">
+    </form>
+
+   <!-- <h1>Download All Images as ZIP</h1>
+    <a href="{{ url_for('routes.download') }}">Download Images</a> -->
+
+    <!-- <button class = "btn btn-success" onclick="location.href='/results'">Show Results</button> -->
+    
+   <div class="loader" style="display:none;"></div>
+
+{% endblock %}
