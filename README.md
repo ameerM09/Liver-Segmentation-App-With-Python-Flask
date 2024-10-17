@@ -1,4 +1,4 @@
-Final directory setup:
+### Below is what the final directory structure should look like:
 
 ```
 
