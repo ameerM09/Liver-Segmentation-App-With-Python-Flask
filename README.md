@@ -1,5 +1,7 @@
 Final directory setup:
 
+```
+
 Liver-Segmentation-App-With-Python-Flask/
     |──data/
        |──dl_models/
@@ -24,3 +26,5 @@ Liver-Segmentation-App-With-Python-Flask/
     |──test_model.py
      
 /data/liver
+
+```
